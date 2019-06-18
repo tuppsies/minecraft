@@ -8,7 +8,7 @@ screen -S minecraft -p 0 -X stuff "/stop
 "
 
 # wait some time to allow the server to shutdown
-sleep 10
+sleep 60
 
 # create the backup ZIP file
 currentdatetime=$(TZ=Australia/Sydney date +'%F-%H-%M-%S')
