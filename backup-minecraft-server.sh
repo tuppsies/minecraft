@@ -13,7 +13,7 @@ sleep 60
 # create the backup ZIP file
 currentdatetime=$(TZ=Australia/Sydney date +'%F-%H-%M-%S')
 filename='/home/ec2-user/backups/'$currentdatetime'-minecraft-server.zip'
-zip -r $filename /home/ec2-user/minecraftserver
+zip -r $filename /home/ec2-user/minecraft-server-1-14-3
 
 # upload the backup to S3
 aws s3 mv $filename s3://target-minecraft/backups/
